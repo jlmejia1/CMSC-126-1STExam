@@ -32,6 +32,10 @@ a:hover {
     border-bottom: 1px solid #5F99CF;
 }
 
+.header-left img {
+    width: 300px;
+    height: auto;
+}
 .header-right {
     display: flex;
     gap: 10px;
@@ -90,6 +94,21 @@ a:hover {
     width: 200px;
     flex-shrink: 0;
 }
+
+.subreddit-link {
+    display: block; /* Ensures the entire link is clickable */
+    padding: 5px 8px; /* Adds padding for spacing */
+    border-radius: 4px; /* Rounds the corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth effect */
+}
+
+.subreddit-link:hover {
+    background-color: #ffcc80; /* Light orange background */
+    color: #d8900c; /* Change text color */
+    text-decoration: none; /* Optional: remove underline */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
 
 .subreddit-nav {
     display: flex;
@@ -158,6 +177,7 @@ a:hover {
 
 .post-content {
     flex: 1; /* Allows each item to grow/shrink equally */
+    justify-content: start; /* Aligns items to the left */
 }
 
 
