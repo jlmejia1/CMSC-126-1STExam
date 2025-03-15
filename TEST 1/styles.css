@@ -27,7 +27,7 @@ header {
   color: white;
   font-size: 1.5em;
   font-weight: bold;
-  grid-row: 1 / -1; /* Span across all columns */
+  grid-row: 1 / -1; /* Sp'an across all columns */
   
 }
 
