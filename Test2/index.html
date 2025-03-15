@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-like Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Container -->
+    <header class="main-header">
+        <div class="header-left">
+            <img src="reddit-logo.png" alt="Reddit Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <span class="username">7hundredand77</span>
+            <a href="#" class="header-link">preferences</a>
+            <a href="#" class="header-link">logout</a>
+        </div>
+    </header>
+
+    <!-- Sub-header Navigation Container -->
+    <nav class="sub-header">
+        <div class="nav-tabs">
+            <a href="#" class="tab active">what's hot</a>
+            <a href="#" class="tab">new</a>
+            <a href="#" class="tab">controversial</a>
+            <a href="#" class="tab">top</a>
+            <a href="#" class="tab">saved</a>
+        </div>
+        <div class="sub-header-right">
+            <input type="search" class="search-bar" placeholder="Search">
+            <span class="new-msg">1 New Msg</span>
+            <span class="stats">53,211</span>
+            <span class="stats">4,887</span>
+        </div>
+    </nav>
+
+    <!-- Main Body Container -->
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <nav class="subreddit-nav">
+                <a href="#" class="subreddit-link">FRONT PAGE</a>
+                <a href="#" class="subreddit-link">PICS</a>
+                <a href="#" class="subreddit-link">SCIENCE</a>
+                <a href="#" class="subreddit-link">TECHNOLOGY</a>
+                <a href="#" class="subreddit-link">ASK REDDIT</a>
+                <a href="#" class="subreddit-link">FUNNY</a>
+                <a href="#" class="subreddit-link">WTF</a>
+                <a href="#" class="subreddit-link active">IAMA</a>
+                <a href="#" class="subreddit-link">WORLD NEWS</a>
+                <a href="#" class="subreddit-link">TODAYILEARNED</a>
+                <a href="#" class="subreddit-link">WORLDNEWS</a>
+                <a href="#" class="subreddit-link">WEBDESIGN</a>
+                <a href="#" class="subreddit-link">ATHEIST</a>
+                <a href="#" class="subreddit-link">FFFFFFFUUUUUUUUUUUU</a>
+                <a href="#" class="subreddit-link">(MORE)</a>
+                
+                <div class="sidebar-section">
+                    <h3>Submit a link</h3>
+                    <p>to anything interesting: news article, blog entry, video, picture...</p>
+                </div>
+                
+                <div class="sidebar-section">
+                    <h3>Create Community</h3>
+                    <p>for your LARPing community...</p>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Middle Content Area -->
+        <main class="content">
+            <!-- Example Post -->
+            <article class="post">
+                <div class="vote-box">
+                    <button class="upvote">↑</button>
+                    <span class="score">232</span>
+                    <button class="downvote">↓</button>
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">IAM the guy who created this design AMA</h2>
+                    <p class="post-meta">submitted 15 hours ago by username</p>
+                    <div class="post-actions">
+                        <a href="#">comments</a>
+                        <a href="#">share</a>
+                        <a href="#">save</a>
+                        <a href="#">hide</a>
+                        <a href="#">report</a>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">IAM the guy who created this design AMA</h2>
+                    <p class="post-meta">submitted 15 hours ago by username</p>
+                    <div class="post-actions">
+                        <a href="#">comments</a>
+                        <a href="#">share</a>
+                        <a href="#">save</a>
+                        <a href="#">hide</a>
+                        <a href="#">report</a>
+                    </div>
+                </div>
+                
+            </article>
+        </main>
+
+        <!-- Right Comments Section -->
+        <aside class="comments-section">
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="comment-username">UserNumber42</span>
+                    <span class="comment-meta">47 points 21 hours ago</span>
+                </div>
+                <p class="comment-text">This is the first redesign I've seen that doesn't suck...</p>
+                <div class="comment-actions">
+                    <a href="#">permalink</a>
+                    <a href="#">parent</a>
+                    <a href="#">reply</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer Container -->
+    <footer class="main-footer">
+        <button class="nav-button">NEWER</button>
+        <button class="nav-button">OLDER</button>
+    </footer>
+</body>
+</html> 

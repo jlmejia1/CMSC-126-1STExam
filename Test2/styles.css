@@ -1,0 +1,244 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.4;
+}
+
+a {
+    color: #0051C7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #CEE3F8;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5F99CF;
+}
+
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-link {
+    color: #333;
+}
+
+/* Sub-header Navigation Styles */
+.sub-header {
+    background-color: #EFF7FF;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5F99CF;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 5px;
+}
+
+.tab {
+    padding: 2px 6px;
+    color: #369;
+    border: 1px solid #5F99CF;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #fff, #EFF7FF);
+}
+
+.tab.active {
+    background: #fff;
+    border-bottom-color: #fff;
+}
+
+.search-bar {
+    padding: 2px 5px;
+    border: 1px solid #999;
+    border-radius: 3px;
+}
+
+/* Main Container Layout */
+.main-container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.subreddit-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.subreddit-link {
+    padding: 2px 5px;
+    color: #369;
+}
+
+.subreddit-link.active {
+    background-color: #EFF7FF;
+    font-weight: bold;
+}
+
+.sidebar-section {
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Content Area Styles */
+.content {
+    flex-grow: 1;
+    max-width: 60%;
+}
+
+.post {
+    display: flex;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.vote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    min-width: 40px;
+}
+
+.upvote, .downvote {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #c6c6c6;
+    font-size: 16px;
+}
+
+.score {
+    color: #c6c6c6;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add spacing between items */
+}
+
+
+.post-content {
+    flex: 1; /* Allows each item to grow/shrink equally */
+}
+
+
+.post-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.post-actions {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+
+/* Comments Section Styles */
+.comments-section {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.comment {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.comment-header {
+    margin-bottom: 5px;
+}
+
+.comment-username {
+    color: #369;
+    font-weight: bold;
+}
+
+.comment-meta {
+    color: #888;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.comment-text {
+    margin-bottom: 5px;
+}
+
+.comment-actions {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    color: #888;
+}
+
+/* Footer Styles */
+.main-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.nav-button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #fff, #EFF7FF);
+    cursor: pointer;
+}
+
+/* Stats and Messages */
+.new-msg {
+    color: orangered;
+}
+
+.stats {
+    color: #888;
+    margin-left: 10px;
+} 
