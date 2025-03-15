@@ -95,6 +95,19 @@ h1 {
     margin-top: 2rem;
 }
 
+.step-controls-start {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.step-controls-end {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+
 .prev,
 .next {
     padding: 0.5rem 1rem;
