@@ -3,52 +3,81 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Newsfeed</title>
+        <title>Chocolate Chip Cookies Recipe</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <header>
-            <h1>Latest News</h1>
+            <h1>Classic Chocolate Chip Cookies</h1>
+            <p class="intro">Learn how to make the perfect chocolate chip cookies with this easy-to-follow recipe.</p>
         </header>
 
-        <main class="news-container">
-            <section class="newsfeed">
-                <article class="news-card">
-                    <img src="news1.jpg" alt="News headline image" />
-                    <div class="news-content">
-                        <h2>Breaking: Major Event Unfolds</h2>
-                        <p class="date">March 14, 2025</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nulla facilisi.
-                        </p>
-                        <a href="#">Read more</a>
-                    </div>
-                </article>
+        <nav class="recipe-nav" role="navigation">
+            <ul>
+                <li><a href="#step1" class="nav-btn">Step 1</a></li>
+                <li><a href="#step2" class="nav-btn">Step 2</a></li>
+                <li><a href="#step3" class="nav-btn">Step 3</a></li>
+                <li><a href="#step4" class="nav-btn">Step 4</a></li>
+            </ul>
+        </nav>
 
-                <article class="news-card">
-                    <img src="news2.jpg" alt="News headline image" />
-                    <div class="news-content">
-                        <h2>Technology Advances in 2025</h2>
-                        <p class="date">March 13, 2025</p>
-                        <p>
-                            New breakthroughs are revolutionizing industries
-                            worldwide.
-                        </p>
-                        <a href="#">Read more</a>
-                    </div>
-                </article>
+        <main class="recipe-steps">
+            <section id="step1" class="step" tabindex="0">
+                <h2>Step 1: Gather Ingredients</h2>
+                <div class="step-content">
+                    <ul>
+                        <li>2 1/4 cups all-purpose flour</li>
+                        <li>1 cup butter, softened</li>
+                        <li>3/4 cup sugar</li>
+                        <li>3/4 cup brown sugar</li>
+                        <li>2 large eggs</li>
+                        <li>2 cups chocolate chips</li>
+                    </ul>
+                </div>
+                <div class="step-controls">
+                    <a href="#step4" class="prev" aria-label="Previous step">Previous</a>
+                    <a href="#step2" class="next" aria-label="Next step">Next</a>
+                </div>
             </section>
 
-            <aside class="sidebar">
-                <h2>Trending Topics</h2>
-                <ul>
-                    <li><a href="#">Global Politics</a></li>
-                    <li><a href="#">AI Developments</a></li>
-                    <li><a href="#">Sports Highlights</a></li>
-                    <li><a href="#">Market Trends</a></li>
-                </ul>
-            </aside>
+            <section id="step2" class="step" tabindex="0">
+                <h2>Step 2: Mix Ingredients</h2>
+                <div class="step-content">
+                    <p>Cream together butter and sugars until smooth. Beat in eggs one at a time. Stir in flour and chocolate chips.</p>
+                </div>
+                <div class="step-controls">
+                    <a href="#step1" class="prev" aria-label="Previous step">Previous</a>
+                    <a href="#step3" class="next" aria-label="Next step">Next</a>
+                </div>
+            </section>
+
+            <section id="step3" class="step" tabindex="0">
+                <h2>Step 3: Form Cookies</h2>
+                <div class="step-content">
+                    <p>Drop rounded tablespoons of dough onto ungreased baking sheets. Leave space between each cookie.</p>
+                </div>
+                <div class="step-controls">
+                    <a href="#step2" class="prev" aria-label="Previous step">Previous</a>
+                    <a href="#step4" class="next" aria-label="Next step">Next</a>
+                </div>
+            </section>
+
+            <section id="step4" class="step" tabindex="0">
+                <h2>Step 4: Bake</h2>
+                <div class="step-content">
+                    <p>Bake at 375°F (190°C) for 9 to 11 minutes or until golden brown. Let cool on baking sheets for 5 minutes.</p>
+                </div>
+                <div class="step-controls">
+                    <a href="#step3" class="prev" aria-label="Previous step">Previous</a>
+                    <a href="#step1" class="next" aria-label="Next step">Next</a>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <button class="restart-btn" onclick="window.location.href='#step1'" aria-label="Restart recipe">
+                Restart Recipe
+            </button>
+        </footer>
     </body>
 </html>
