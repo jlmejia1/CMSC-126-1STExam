@@ -16,7 +16,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #abd8ea;
     padding-top: 60px;
     display: none; /* Initially hidden */
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .sidenav a:hover {
-    background-color: #575757;
+    background-color: #c0daea;
 }
 
 .sidenav .closebtn {
@@ -88,8 +88,8 @@ body {
     gap: 10px; /* Adjust spacing between image and text */
 }
 .upper-container img {
-    width: 300px; /* Adjust size as needed */
-    height: 30;
+    width: 500px; /* Adjust size as needed */
+    height: 50;
 }
 
 /* Below container */
