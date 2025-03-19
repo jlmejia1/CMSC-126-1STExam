@@ -60,24 +60,27 @@
     
             </div>
 
-
-           
-
-
-
-            
-
             <!-- Overlay (for dimming background when sidebar opens) -->
             <div id="overlay" class="overlay" onclick="closeNav()"></div>
     
-            <!-- Button Group (optional) -->
-            <div class="button-group">
-                <button >what's Hot</button>     
-                <button>new</button>
-                <button>controversial</button>
-                <button>top</button>
-                <button>saved</button>
+            <div class="header-container">
+                <div class="button-group">
+                    <button>What's Hot</button>     
+                    <button>New</button>
+                    <button>Controversial</button>
+                    <button>Top</button>
+                    <button>Saved</button>
+                </div>
+            
+                <div class="sub-header-right">
+                    <input type="search" class="search-bar" placeholder="Search">
+                    <span class="new-msg">1 New Msg</span>
+                    <span class="stats">53,211</span>
+                    <span class="stats">4,887</span>
+                </div>
             </div>
+            
+
         </div>
 
         <div class="layout">
@@ -555,6 +558,12 @@
         }
 
     </script>
+
+    <!-- Footer Container -->
+    <footer class="main-footer">
+        <button class="nav-button">NEWER</button>
+        <button class="nav-button">OLDER</button>
+    </footer>
 
 </body>
 </html>
