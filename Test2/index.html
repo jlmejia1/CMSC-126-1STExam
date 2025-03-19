@@ -3,52 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reddit-like Interface</title>
+    <title>Reddit Old Style Layout</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Container -->
-    <header class="main-header">
-        <div class="header-left">
-            <img src="image_1-removebg-preview.png" alt="Reddit Logo" class="logo">
-        </div>
-        <div class="header-right">
-            <span class="username">7hundredand77</span>
-            <a href="#" class="header-link">preferences</a>
-            <a href="#" class="header-link">logout</a>
-        </div>
-    </header>
 
-    <!-- Sub-header Navigation Container -->
-    <nav class="sub-header">
-        <div class="nav-tabs">
-            <a href="#" class="tab active">what's hot</a>
-            <a href="#" class="tab">new</a>
-            <a href="#" class="tab">controversial</a>
-            <a href="#" class="tab">top</a>
-            <a href="#" class="tab">saved</a>
+    <div class="main-content" id="main">
+        <div class="upper-container">
+            <h1>Reddit Old Style Layout</h1>
         </div>
-        <div class="sub-header-right">
-            <div class="search-container">
-                <input type="search" class="search-bar" placeholder="">
-                <span class="search-icon">🔍</span>
-            </div>
-            <span class="msg-container">
-                <span class="msg-icon">✉</span>
-                <span class="new-msg">1 New Msg</span>
-            </span>
-            <div class="stats-box">
-                <span class="stats">53,211 Link</span>
-                <span class="stats">4,887 Comment</span>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Main Body Container -->
-    <div class="main-container">
-        <!-- Left Sidebar -->
-        <aside class="sidebar">
-            <nav class="subreddit-nav">
+        <!-- Below Container with Sidebar Button on the Left -->
+        <div class="below-container">
+            <div class="sidebar-button">
+                <span class="openbtn" onclick="openNav()">>></span>
+            </div>
+            
+            <!-- Side Navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="#" class="subreddit-link">FRONT PAGE</a>
                 <a href="#" class="subreddit-link">PICS</a>
                 <a href="#" class="subreddit-link">SCIENCE</a>
@@ -64,432 +37,500 @@
                 <a href="#" class="subreddit-link">ATHEIST</a>
                 <a href="#" class="subreddit-link">FFFFFFFUUUUUUUUUUUU</a>
                 <a href="#" class="subreddit-link">(MORE)</a>
-            </nav>
-                
-            <div class="sidebar-section">
-                <h3>Submit a link</h3>
-                <p>to anything interesting: news article, blog entry, video, picture...</p>
-            </div>
-                
-            <div class="sidebar-section">
-                <h3>Create Community</h3>
-                <p>for your LARPing community...<br>
-                ...because nothing in life is (except reddit!)</p>
-                <p>here on the side</p>
             </div>
 
-            <div class="sidebar-image">
-                <img src="little-big-planet.jpg" alt="Little Big Planet">
-                <div class="sidebar-caption">tiniest ad in the world</div>
-            </div>
-        </aside>
-
-        <!-- Middle Content Area -->
-        <main class="content">
-            <!-- Example of a post with thumbnail -->
-            <article class="post">
-                <span class="sequence-number">1</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail1.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">What do you call 60 guys watching the Super Bowl at home?<span class="post-domain">(cnn.com)</span></h2>
-                    <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
-                    <div class="post-actions">
-                        <a href="#">623 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Example of a post without thumbnail -->
-            <article class="post">
-                <span class="sequence-number">2</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">232</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">IAM the guy who created this design AMA<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 15 hours ago by 7hundredand77</p>
-                    <div class="post-actions">
-                        <a href="#">208 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">3</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">22</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Use this Chrome addon to 'block major third parties and search engines from tracking the webpages you go to and searches...<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
-                    <div class="post-actions">
-                        <a href="#">200 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">4</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail4.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">22 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">5</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">9215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail5.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">6,232 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">6</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">22 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">7</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">103</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">6,232 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">8</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail8.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">What do you call 60 guys watching the Super Bowl at home?<span class="post-domain">(cnn.com)</span></h2>
-                    <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
-                    <div class="post-actions">
-                        <a href="#">623 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">9</span>
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">22</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Use this Chrome addon to 'block major third parties and search engines from tracking the webpages you go to and searches...<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
-                    <div class="post-actions">
-                        <a href="#">200 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">10</span>
-               
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail10.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">22 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">11</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">9215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail11.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">6,232 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">13</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail13.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">22 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="post">
-                <span class="sequence-number">14</span>
-                
-                <div class="vote-box">
-                    <button class="upvote">↑</button>
-                    <span class="score">9215</span>
-                    <button class="downvote">↓</button>
-                </div>
-                <div class="post-thumbnail">
-                    <img src="thumbnail14.jpg" alt="Thumbnail">
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
-                    <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
-                    <div class="post-actions">
-                        <a href="#">6,232 comments</a>
-                        <a href="#">share</a>
-                        <a href="#">save</a>
-                        <a href="#">hide</a>
-                        <a href="#">report</a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Posts without thumbnails -->
             
 
-           
+            <!-- Overlay (for dimming background when sidebar opens) -->
+            <div id="overlay" class="overlay" onclick="closeNav()"></div>
+    
+            <!-- Button Group (optional) -->
+            <div class="button-group">
+                <button>what's Hot</button>
+                <button>new</button>
+                <button>controversial</button>
+                <button>top</button>
+                <button>saved</button>
+            </div>
+        </div>
 
-            
-        </main>
-
-        <!-- Right Comments Section -->
-        <aside class="comments-section">
-            <div class="points-container">
-                <div class="points-info">
-                    <span class="points-number">232</span>
-                    <span class="points-text">points</span>
-                    <span class="points-percentage">(71% like it)</span>
-                </div>
-                <div class="votes-info">
-                    <div class="up-votes">390 up votes</div>
-                    <div class="down-votes">158 down votes</div>
-                </div>
-            </div>
-            <div class="comment-tools">
-                <div class="save-box"></div>
-                <button class="save-button">save</button>
-            </div>
-            <div class="formatting-help-container">
-                <a href="#" class="formatting-help">formatting help</a>
-            </div>
-            <div class="comment-thread">
-                <div class="comment">
-                    <div class="comment-heading">
-                        <div class="comment-voting">
-                            <button>↑</button>
-                            <button>↓</button>
-                        </div>
-                        <div class="comment-info">
-                            <a href="#" class="comment-author">Pravusmentis</a>
-                            <span>47 points 21 hours ago</span>
-                            <span>[-]</span>
+        <div class="layout">
+            <main class="content">
+                <!-- Example of a post with thumbnail -->
+                <article class="post">
+                    <span class="sequence-number">1</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail1.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">What do you call 60 guys watching the Super Bowl at home?<span class="post-domain">(cnn.com)</span></h2>
+                        <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
+                        <div class="post-actions">
+                            <a href="#">623 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
                         </div>
                     </div>
-                    <div class="comment-body">
-                        <p>I think this is a great idea, I've been wanting to see something like this for a while. I think it would be great to have a way to see what is going on in the comments without having to click through to them.</p>
+                </article>
+    
+                <!-- Example of a post without thumbnail -->
+                <article class="post">
+                    <span class="sequence-number">2</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">232</span>
+                        <button class="downvote">↓</button>
                     </div>
-                    <div class="replies">
+                    <div class="post-content">
+                        <h2 class="post-title">IAM the guy who created this design AMA<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 15 hours ago by 7hundredand77</p>
+                        <div class="post-actions">
+                            <a href="#">208 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">3</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">22</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Use this Chrome addon to 'block major third parties and search engines from tracking the webpages you go to and searches...<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
+                        <div class="post-actions">
+                            <a href="#">200 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">4</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail4.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">22 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">5</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">9215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail5.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">6,232 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">6</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">22 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">7</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">103</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">6,232 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">8</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail8.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">What do you call 60 guys watching the Super Bowl at home?<span class="post-domain">(cnn.com)</span></h2>
+                        <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
+                        <div class="post-actions">
+                            <a href="#">623 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">9</span>
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">22</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Use this Chrome addon to 'block major third parties and search engines from tracking the webpages you go to and searches...<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 19 hours ago by krispykrackers</p>
+                        <div class="post-actions">
+                            <a href="#">200 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">10</span>
+                   
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail10.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">22 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">11</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">9215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail11.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">6,232 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">13</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail13.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">Thanks, Sally, That blowjob was...SFW<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 11 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">22 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+    
+                <article class="post">
+                    <span class="sequence-number">14</span>
+                    
+                    <div class="vote-box">
+                        <button class="upvote">↑</button>
+                        <span class="score">9215</span>
+                        <button class="downvote">↓</button>
+                    </div>
+                    <div class="post-thumbnail">
+                        <img src="thumbnail14.jpg" alt="Thumbnail">
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">As a six-year-old, this was the best book ever<span class="post-domain">(i.imgur.com)</span></h2>
+                        <p class="post-meta">submitted 112 hours ago by Maiiko to gaming</p>
+                        <div class="post-actions">
+                            <a href="#">6,232 comments</a>
+                            <a href="#">share</a>
+                            <a href="#">save</a>
+                            <a href="#">hide</a>
+                            <a href="#">report</a>
+                        </div>
+                    </div>
+                </article>
+                
+            </main>
+
+            <div class="right-container">
+                <div class="top-half">
+                    <div class="points-container">
+                        <div class="points-info">
+                            <span class="points-number">232</span>
+                            <span class="points-text">points</span>
+                            <span class="points-percentage">(71% like it)</span>
+                        </div>
+                        <div class="votes-info">
+                            <div class="up-votes">390 up votes</div>
+                            <div class="down-votes">158 down votes</div>
+                        </div>
+                    </div>
+                    <div class="comment-tools">
+                        <div class="save-box"></div>
+                        <button class="save-button">save</button>
+                    </div>
+                    <div class="formatting-help-container">
+                        <a href="#" class="formatting-help">formatting help</a>
+                    </div>
+                </div>
+                
+                <div class="bottom-half">
+                    <div class="comment-thread">
                         <div class="comment">
-                            <div class="comment-heading">
-                                <div class="comment-voting">
-                                    <button>↑</button>
-                                    <button>↓</button>
-                                </div>
-                                <div class="comment-info">
-                                    <a href="#" class="comment-author">7hundredand77</a>
-                                    <span>12 points 20 hours ago</span>
-                                    <span>[-]</span>
-                                </div>
+                            <div class="comment-header">
+                                <span class="comment-username">7hundredand77 [S]</span>
+                                <span class="comment-meta">14 points 20 hours ago</span>
                             </div>
                             <div class="comment-body">
-                                <p>Thanks! I'm glad you like it. I've been working on this for a while and I think it's finally ready to share.</p>
+                                <p>Wow, the first Reddit redesign I've seen that doesn't suck, and I've been on this site for 4 years now (different accounts). Very functional. With wide screen monitors this could be very cool.</p>
+                                <p>Only suggestion is to have lower the width of the scores column for each post and the subreddit side bar so there is more room for the content.</p>
                             </div>
-                            <div class="replies">
-                                <div class="comment">
-                                    <div class="comment-heading">
-                                        <div class="comment-voting">
-                                            <button>↑</button>
-                                            <button>↓</button>
-                                        </div>
-                                        <div class="comment-info">
-                                            <a href="#" class="comment-author">Pravusmentis</a>
-                                            <span>8 points 19 hours ago</span>
-                                            <span>[-]</span>
-                                        </div>
+                            <div class="comment-actions">
+                                <a href="#">permalink</a> | 
+                                <a href="#">report</a> | 
+                                <a href="#">reply</a>
+                            </div>
+                            <div class="comment-replies">
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">7hundredand77 [S]</span>
+                                        <span class="comment-meta">14 points 20 hours ago</span>
                                     </div>
                                     <div class="comment-body">
-                                        <p>I really like the way you've laid out the comments. It makes it much easier to follow conversations.</p>
+                                        <p>Ha, yeah, since I know many people use widescreen monitors these days, this could make use of space a lot more effectively. A sweet spot with columns needs to be found where there is enough space to view everything perfectly. Since I just quickly put this one together, I didn't really spend much time finding that right balance.</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">parent</a> | 
+                                        <a href="#">edit</a> | 
+                                        <a href="#">delete</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">aliasforspam</span>
+                                        <span class="comment-meta">7 points 15 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>This looks like an email client. Brilliant!</p>
+                                        <p>...I never realized how much Reddit is like reading email until now. I guess we could view things in brackets much like forwards from the uncle you otherwise don't communicate with. DAE blah blah = FWD: FWD: Fwd: You gotta read this!</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">Deterministic</span>
+                                        <span class="comment-meta">4 points 11 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>It's funny that your mention email, because it looks ever-so-vaguely like Google Wave, except that instead of Menu | Inboxes | Emails, it's Subreddits | Topics | Comments</p>
+                                        <p>Nevertheless, it's an interesting concept for a redesign - a bit shinier, but still maintaining the minimalistic design.</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">parent</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">volve</span>
+                                        <span class="comment-meta">3 points 10 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Except, lets be honest; I only rarely maximize windows on my 24" monitors, almost never for something like passive entertainment such as Reddit. I personally feel a lot of these "wide-screen optimized" designs miss the point that they aren't likely the sole activity on said widescreen...</p>
+                                        <p>(But it is a very nice design!)</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">freshwire</span>
+                                        <span class="comment-meta">2 points 9 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>You could have it that the column width can be changed (by just dragging around).</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">gusthebus</span>
+                                        <span class="comment-meta">3 points 15 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>I agree. Additionally, it wouldn't be difficult to provide a button to toggle from the current layout, to the OP's design.</p>
+                                        <p>That would be a simple JavaScript to change out the page CSS. The dev team could take it one step farther and cache the user's UI choice.</p>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
+                                    </div>
+                                </div>
+                                <div class="comment reply">
+                                    <div class="comment-header">
+                                        <span class="comment-username">7hundredand77 [S]</span>
+                                        <span class="comment-meta">7 points 14 hours ago</span>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>I am going update the design tonight. There have been a lot of responses and feedback on what needs to be done:</p>
+                                        <ul>
+                                            <li>Orange Icon for new messages</li>
+                                            <li>A more reddit styled colour theme rather than the white grey</li>
+                                            <li>Update column widths</li>
+                                            <li>Allow dynamic sized story lengths</li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment-actions">
+                                        <a href="#">permalink</a> | 
+                                        <a href="#">report</a> | 
+                                        <a href="#">reply</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="comment">
-                    <div class="comment-heading">
-                        <div class="comment-voting">
-                            <button>↑</button>
-                            <button>↓</button>
-                        </div>
-                        <div class="comment-info">
-                            <a href="#" class="comment-author">7hundredand77</a>
-                            <span>47 points 21 hours ago</span>
-                            <span>[-]</span>
-                        </div>
-                    </div>
-                    <div class="comment-body">
-                        <p>I am going update the design tonight. There have been a lot of responses and feedback on what needs to be done:</p>
-                        <ul>
-                            <li>Orange Icon for new messages</li>
-                            <li>A more reddit styled colour theme rather than the white grey</li>
-                            <li>Update column widths</li>
-                            <li>Allow dynamic sized story lengths</li>
-                        </ul>
-                    </div>
+                    
+                    
                 </div>
             </div>
-        </aside>
+        </div>
     </div>
 
-    <!-- Footer Container -->
-    <footer class="main-footer">
-        <button class="nav-button">← NEWER</button>
-        <button class="nav-button">OLDER →</button>
-    </footer>
+    <script src="scripts.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px"; // Set the sidebar width
+            document.getElementById("mySidenav").style.display = "block"; // Make the sidebar visible
+            document.getElementById("overlay").style.display = "block"; // Show the overlay
+            document.getElementById("main").style.marginLeft = "250px"; // Shift main content
+        }
+
+                // Function to close the sidebar
+         function closeNav() {
+            // Close the sidebar
+            document.getElementById("mySidenav").style.width = "0"; // Set sidebar width to 0 (close it)
+            document.getElementById("mySidenav").style.display = "none"; // Hide the sidebar
+            document.getElementById("overlay").style.display = "none"; // Hide the overlay
+            document.getElementById("main").style.marginLeft = "0"; // Reset main content margin
+        }
+
+    </script>
+
 </body>
-</html> 
+</html>
